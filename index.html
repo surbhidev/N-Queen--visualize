@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>N-Queen Visualization</title>
+</head>
+<body>
+    <div class="container">
+        <h1>N-Queens Visualizer</h1>
+        <div class="button-group">
+            <button id="fourByFour" class="size-btn">4x4</button>
+            <button id="eightByEight" class="size-btn">8x8</button>
+        </div>
+        <div id="boardContainer">
+            <p id="initialMessage">Please select a board size to start.</p>
+            <div id="board" style="display: none;"></div>
+        </div>
+        <button id="visualizeBtn" disabled>Visualize N-Queens</button>
+        <div id="Iterations">
+            <h3>Solution Steps:</h3>
+            <ol></ol>
+        </div>
+        <div id="alert" class="alert-success" style="display: none;">
+            Success! A valid solution for the N-Queens problem has been found.
+        </div>
+    </div>
+
+    <script src="board.js"></script>
+    <script src="backTrackingAlgorithm.js"></script>
+    <script src="visualization.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
